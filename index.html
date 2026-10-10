@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nicwox | Bathroom & Kitchen Fittings</title>
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;color:#203047;background:#f5f8fc}
+    header{background:#10233f;color:#fff;padding:18px 6%;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+    .logo{font-size:28px;font-weight:800;letter-spacing:1px}.logo span{color:#51c2ff}
+    nav a{color:#fff;text-decoration:none;margin:0 8px;font-weight:600}
+    .hero{padding:65px 6%;text-align:center;background:linear-gradient(135deg,#dff2ff,#fff)}
+    .hero h1{font-size:clamp(32px,5vw,48px);color:#10233f;margin:0 0 15px}.hero p{font-size:18px;line-height:1.6}
+    .btn{display:inline-block;background:#087cc1;color:#fff;text-decoration:none;padding:12px 22px;border-radius:7px;font-weight:bold;margin-top:10px}
+    section{padding:48px 6%}h2{text-align:center;color:#10233f;margin:0 0 25px;font-size:30px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:20px}
+    .card{background:white;border:1px solid #e3ebf3;border-radius:12px;padding:25px;text-align:center;box-shadow:0 4px 14px #10233f0b}
+    .icon{font-size:56px;margin-bottom:10px}.card h3{color:#10233f}
+    .about{background:#e8f5ff;text-align:center;line-height:1.8}
+    .contact{text-align:center;line-height:1.8}footer{background:#10233f;color:#fff;text-align:center;padding:22px}
+    @media(max-width:600px){header{justify-content:center}nav{text-align:center}nav a{display:inline-block;margin:6px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">NIC<span>WOX</span></div>
+    <nav><a href="#home">Home</a><a href="#products">Products</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <h1>Welcome to Nicwox</h1>
+      <p>Stylish and practical bathroom fittings, kitchen taps and sanitary products.</p>
+      <a class="btn" href="#products">Explore Products</a>
+    </section>
+    <section id="products">
+      <h2>Our Products</h2>
+      <div class="grid">
+        <article class="card"><div class="icon">🚰</div><h3>Brass Sink Cock</h3><p>Practical tap solutions for everyday use.</p></article>
+        <article class="card"><div class="icon">🚿</div><h3>Bathroom Fittings</h3><p>Useful fittings for your bathroom setup.</p></article>
+        <article class="card"><div class="icon">🔧</div><h3>Plumbing Accessories</h3><p>Accessories for plumbing and home improvement.</p></article>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <h2>About Nicwox</h2>
+      <p>Nicwox focuses on bathroom, kitchen and sanitary fittings, with practical products for everyday home improvement.</p>
+    </section>
+    <section class="contact" id="contact">
+      <h2>Contact Us</h2>
+      <p>For product enquiries, please add your official phone number and email before publishing.</p>
+    </section>
+  </main>
+  <footer><p>&copy; <span id="year"></span> Nicwox. All Rights Reserved.</p></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
